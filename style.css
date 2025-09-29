@@ -51,6 +51,7 @@ body {
 }
 
 #dogs {
+    width: 1800px;
     height: 1350px;
     margin-top: 6px;
     margin-left: 26px;
@@ -101,8 +102,8 @@ body {
 footer{
 
   height: 200px;
-  width:100%;
-margin-top: 500px;
+  width: 1900px;
+  margin-top: 500px;
   background-color: rgba(0, 0, 0, 0.548);
    border-radius: 10px;
 
@@ -134,7 +135,7 @@ h2{
 h3{
   font-size: 25px;
     font-family: cursive;
-   color: rgb(100, 120, 187);
+   color: rgba(100, 120, 187, 0.918);
 }
 
 #infoDiv{
