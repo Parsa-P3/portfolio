@@ -23,16 +23,18 @@ body {
 }
 
 
-/* #headerDiv {
+header {
 
-    background-color: rgba(47, 60, 68, 0.808);
-    height: 100px;
-    width: 97%;
+    /* background-color: rgba(47, 60, 68, 0.103); */
+    height: 180px;
+    width: 1900px;
     margin: 6px auto 20px auto;
     padding: 0px;
     opacity: 0.90;
     border-radius: 10px;
-} */
+    text-align: center;
+
+}
 
 #imgParsa{
   width: 300px;
@@ -48,6 +50,7 @@ body {
     margin-left: 26px;
     margin-right: 19px;
     border-radius: 10px;
+    margin-bottom: 800px;
     /* background-color: rgba(67, 86, 97, 0.808); */
 }
 
@@ -375,4 +378,143 @@ h3{
   background-repeat: no-repeat;
   background-position-y: 30px;
   background-position-x: 15px;
+}
+
+#homeMainDiv{
+  background-color: #0000004b;
+  width: 100%;
+  height: 945px;
+  
+}
+
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Para que quede detrás del contenido */
+}
+
+button.home,button.home::after {
+  margin: 40px;
+  margin-left: 15px;
+  padding:20px 60px;
+  font-size: 30px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+  position: relative;
+}
+
+
+
+button.home::after {
+  --move1: inset(50% 50% 50% 50%);
+  --move2: inset(31% 0 40% 0);
+  --move3: inset(39% 0 15% 0);
+  --move4: inset(45% 0 40% 0);
+  --move5: inset(45% 0 6% 0);
+  --move6: inset(14% 0 61% 0);
+  clip-path: var(--move1);
+  content: 'Errorr!!';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+
+button.home:hover::after {
+  animation: Error 1s;
+  text-shadow: 10 10px 10px black;
+  animation-timing-function: steps(2, end);
+  text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #5934fd;
+  background-color: transparent;
+  /* border: 3px solid rgb(0, 255, 213); */
+}
+
+button.home:hover {
+  text-shadow: -1px -1px 0px #1df2f0, 1px 1px 0px #E94BE8;
+}
+
+/* button:hover {
+  background-color: transparent;
+  border: 1px solid rgb(0, 255, 213);
+  box-shadow: 0px 10px 10px -10px rgb(0, 255, 213);
+} */
+
+@keyframes Error {
+  0% {
+    clip-path: var(--move1);
+    transform: translate(0px,-10px);
+  }
+
+  10% {
+    clip-path: var(--move2);
+    transform: translate(-10px,10px);
+  }
+
+  20% {
+    clip-path: var(--move3);
+    transform: translate(10px,0px);
+  }
+
+  30% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  40% {
+    clip-path: var(--move5);
+    transform: translate(10px,-10px);
+  }
+
+  50% {
+    clip-path: var(--move6);
+    transform: translate(-10px,10px);
+  }
+
+  60% {
+    clip-path: var(--move1);
+    transform: translate(10px,-10px);
+  }
+
+  70% {
+    clip-path: var(--move3);
+    transform: translate(-10px,10px);
+  }
+
+  80% {
+    clip-path: var(--move2);
+    transform: translate(10px,-10px);
+  }
+
+  90% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  100% {
+    clip-path: var(--move1);
+    transform: translate(0);
+  }
+}
+
+#resumeDiv{
+    width: 1800px;
+    height: 1350px;
+    margin-top: 6px;
+    margin-left: 39px;
+    margin-right: 19px;
+    border-radius: 10px;
+    background-color: rgba(67, 86, 97, 0.37);
+
+    display: flex;          /* Yan yana dizmek için */
+    gap: 20px;              /* Aralarına boşluk */ 
+    padding: 10px;          /* Kenarlardan boşluk (opsiyonel) */
+  
 }

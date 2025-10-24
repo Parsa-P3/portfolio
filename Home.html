@@ -4,26 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-
-
-    <style>
-    video {
-      position: fixed;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      min-height: 100%;
-      object-fit: cover;
-      z-index: -1; /* Para que quede detrás del contenido */
-    }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body id="bodyhome">
+
      <video autoplay muted loop>
     <source src="img/36784-412873690_small.mp4" type="video/mp4">
-    Tu navegador no soporta video en HTML5.
-  </video>
     
+  </video>
+
+<header>
+        <button class="home">
+            <img src="img/Home.png" alt="">
+        </button>
+        <button class="home">
+             <img src="img/Projects-removebg-preview.png" alt="" 
+              onclick="window.open('C:/Users/Alumno.DESKTOP-DI5KTUG/Desktop/PruebasDeIA/Games/index.html', '_blank')">
+        </button>
+        <button class="home"
+                onclick="window.location.href='C:/Users/Alumno.DESKTOP-DI5KTUG/Desktop/portfolio/index.html'">
+             <img src="img/Resume.png" alt="">
+             
+
+        </button >
+
+        <button id="buttonContact" class="home">
+            <img src="img/CONTACTme.png" alt="">
+        </button>
+
+</header>
+
+<div id="resumeDiv">
+asdad
+</div>
 </body>
 </html>
