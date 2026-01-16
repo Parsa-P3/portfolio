@@ -478,6 +478,7 @@ body {
     background-position: center;
 }
 
+/*  */
 /* --- Info Button & Header --- */
 .card-header {
     display: flex;
@@ -591,4 +592,21 @@ body {
     position: absolute;
     left: 0;
     font-weight: bold;
+}
+
+
+#rickymorty {
+    background-image: 
+        linear-gradient(rgba(5, 5, 5, 0.726), rgba(5, 5, 5, 0.76)),
+        url('rickymorty.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#harrypotter {
+    background-image: 
+        linear-gradient(rgba(5, 5, 5, 0.726), rgba(5, 5, 5, 0.76)),
+        url('harry.png');
+    background-size: cover;
+    background-position: center;
 }

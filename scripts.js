@@ -30,3 +30,30 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+/* --- Modal Functions --- */
+function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.classList.add('show');
+    document.body.style.overflow = 'hidden'; // Arka plan scroll'unu engelle
+}
+
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.classList.remove('show');
+    // Animasyon bitince display: none yapmak için setTimeout kullanılabilir
+    // ama basitlik için CSS transition ile idare ediyoruz.
+    setTimeout(() => {
+        if (!modal.classList.contains('show')) {
+             document.body.style.overflow = 'auto'; // Scroll'u geri aç
+        }
+    }, 300);
+}
+
+// Modal dışına tıklanınca kapatma
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+        event.target.classList.remove('show');
+        document.body.style.overflow = 'auto';
+    }
+}
