@@ -163,37 +163,71 @@
         </div>
     </section>
 
-    <section id="projects" class="section bg-dark">
-        <div class="container">
-            <h2 class="section-title center animate-fade-up">Proyectos</h2>
-
-            <div class="projects-grid">
-                <div class="project-card animate-fade-up" id="harrypotter">
-                    <div class="project-icon">
-                        <i class='bx bxs-magic-wand'></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Harry Potter Universe</h3>
-                        <p>Programación Orientada a Objetos y gestión dinámica de datos mediante JSON.</p>
-                        <a href="https://f1harrypotter.netlify.app/" target="_blank" class="project-link">Ver Proyecto
-                            <i class='bx bx-right-arrow-alt'></i></a>
-                    </div>
+<section id="projects" class="section bg-dark">
+    <div class="container">
+        <h2 class="section-title center animate-fade-up">Proyectos</h2>
+        
+        <div class="projects-grid">
+            <div class="project-card animate-fade-up">
+                <div class="card-header">
+                    <div class="project-icon"><i class='bx bxs-magic-wand'></i></div>
+                    <button class="info-btn" onclick="openModal('modal-hp')">
+                        <i class='bx bx-info-circle'></i> Info
+                    </button>
                 </div>
+                <div class="project-content">
+                    <h3>Harry Potter Universe</h3>
+                    <p>Catálogo interactivo con filtrado en tiempo real y gestión de objetos.</p>
+                    <a href="https://f1harrypotter.netlify.app/" target="_blank" class="project-link">Ver Proyecto <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+            </div>
 
-                <div class="project-card animate-fade-up" id="rickymorty">
-                    <div class="project-icon">
-                        <i class='bx bxs-flask'></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Rick & Morty API</h3>
-                        <p>Interacción avanzada con APIs externas y manipulación del DOM en tiempo real.</p>
-                        <a href="https://f1rickymorty.netlify.app/" target="_blank" class="project-link">Ver Proyecto <i
-                                class='bx bx-right-arrow-alt'></i></a>
-                    </div>
+            <div class="project-card animate-fade-up">
+                <div class="card-header">
+                    <div class="project-icon"><i class='bx bxs-flask'></i></div>
+                    <button class="info-btn" onclick="openModal('modal-rm')">
+                        <i class='bx bx-info-circle'></i> Info
+                    </button>
+                </div>
+                <div class="project-content">
+                    <h3>Rick & Morty API</h3>
+                    <p>Aplicación SPA (Single Page Application) consumiendo API REST externa.</p>
+                    <a href="https://f1rickymorty.netlify.app/" target="_blank" class="project-link">Ver Proyecto <i class='bx bx-right-arrow-alt'></i></a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+
+    <div id="modal-hp" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-hp')">&times;</span>
+            <h3>Harry Potter Universe - Detalles Técnicos</h3>
+            <div class="modal-body">
+                <p><strong>Objetivo:</strong> Crear una interfaz dinámica que permita explorar la base de datos de personajes de Harry Potter.</p>
+                <ul>
+                    <li><strong>Tecnologías:</strong> HTML5, CSS3, JavaScript (ES6+), Fetch API.</li>
+                    <li><strong>Desafíos:</strong> Implementar un buscador en tiempo real y filtros por "Casa" (Gryffindor, Slytherin, etc.) sin recargar la página.</li>
+                    <li><strong>Solución:</strong> Uso de <code>Array.filter()</code> y manipulación directa del DOM para renderizar tarjetas optimizadas.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-rm" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-rm')">&times;</span>
+            <h3>Rick & Morty Explorer - Detalles Técnicos</h3>
+            <div class="modal-body">
+                <p><strong>Objetivo:</strong> Consumir una API pública masiva y presentar la información de manera paginada y eficiente.</p>
+                <ul>
+                    <li><strong>Tecnologías:</strong> JavaScript Asíncrono (Async/Await), JSON, CSS Grid.</li>
+                    <li><strong>Arquitectura:</strong> Estructura modular separando la lógica de llamada a la API de la lógica de renderizado.</li>
+                    <li><strong>Funcionalidad Clave:</strong> Paginación dinámica que carga nuevos personajes bajo demanda.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
     <section id="contact" class="section">
         <div class="container animate-fade-up">
