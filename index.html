@@ -18,13 +18,14 @@
         <div class="container nav-content">
             <a href="#" class="logo">PARSA<span>.DEV</span></a>
             <ul class="nav-links">
-                <!-- <li><a href="#about">Sobre mí</a></li> -->
+                <li><a href="#about">Sobre mí</a></li>
                 <li><a href="#education">Educacion</a></li>
                 <li><a href="#skills">Habilidades</a></li>
                 <li><a href="#experience">Experiencia</a></li>
                 <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact" >Contacto</a></li>
                 <li><a href="docs/spanishCv.pdf" download="CV_Parsa.pdf" class="nav-btn">Curriculum</a></li>
-                <!-- <li><a href="#contact" class="nav-btn">Contacto</a></li> -->
+                
             </ul>
         </div>
     </nav>
@@ -166,9 +167,31 @@
     <section id="projects" class="section bg-dark">
         <div class="container">
             <h2 class="section-title center animate-fade-up">Proyectos</h2>
-            <div class="empty-projects animate-fade-up">
-                <i class='bx bx-dots-horizontal-rounded'></i>
-                <p>Proyectos en desarrollo. Próximamente integrando trabajos de Java y Angular.</p>
+
+            <div class="projects-grid">
+                <div class="project-card animate-fade-up"  id="harrypotter">
+                    <div class="project-icon">
+                        <i class='bx bxs-magic-wand'></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Harry Potter Universe</h3>
+                        <p>Programación Orientada a Objetos y gestión dinámica de datos mediante JSON.</p>
+                        <a href="https://f1harrypotter.netlify.app/" target="_blank" class="project-link">Ver Proyecto
+                            <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card animate-fade-up" id="rickymorty">
+                    <div class="project-icon">
+                        <i class='bx bxs-flask'></i>
+                    </div>
+                    <div class="project-content" >
+                        <h3>Rick & Morty API</h3>
+                        <p>Interacción avanzada con APIs externas y manipulación del DOM en tiempo real.</p>
+                        <a href="https://f1rickymorty.netlify.app/" target="_blank" class="project-link">Ver Proyecto <i
+                                class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -181,7 +204,7 @@
                 <div class="contact-methods">
                     <a href="mailto:parsapourshahroodi@gmail.com" class="method-card"><i
                             class='bx bx-envelope'></i><span>Email</span></a>
-                    <a href="www.linkedin.com/in/m-parsa-p" target="_blank" class="method-card"><i
+                    <a href="https://www.linkedin.com/in/m-parsa-p/" target="_blank" class="method-card"><i
                             class='bx bxl-linkedin'></i><span>LinkedIn</span></a>
                 </div>
             </div>
