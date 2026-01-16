@@ -1,211 +1,148 @@
 <!DOCTYPE html>
-<html lang="Es">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parsa P.</title>
-
+    <title>Parsa Pour Shahroodi | Desarrollador Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
 </head>
-
 <body>
 
-    <div id="mainDiv">
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">PARSA<span>.DEV</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#education">Educacion</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact" class="nav-btn">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <header>
-            <div id="headerDiv">
-
+    <header class="hero">
+        <div class="container hero-content animate-fade-up">
+            <span class="status-badge"><i class='bx bxs-circle'></i> Buscando prácticas DAW</span>
+            <h1>Construyendo el futuro<br><span class="gradient-text">línea a línea.</span></h1>
+            <p>Soy Parsa, desarrollador web en formación. Especializado en crear soluciones digitales eficientes con un enfoque multicultural y bilingüe.</p>
+            <div class="hero-btns">
+                <a href="#experience" class="btn btn-primary">Ver trayectoria</a>
+                <a href="#contact" class="btn btn-outline">Contactar</a>
             </div>
+        </div>
+    </header>
 
-        </header>
-
-        <div id="dogs">
-            <div id="leftBarDiv">
-                <!-- <img src="img/Ekran_görüntüsü_2025-09-28_191514-removebg-preview.png" alt="" id="imgParsa"> -->
-                <div id="imgPP">
-
-                </div>
-                <div id="infoDiv">
-                    <h2> Education: </h2>
-                    <ul>
-                        <li>
-                            <p> Web Application Development FP in Prometeo </p>
-                            <p> Madrid , Spain
-                                09/2024 - Present</p>
-                        </li>
-                        <li>
-                            <p> Beyhan Rifat Anadolu Highschool </p>
-                            <p> Eskişehir , Turkey
-                                2015 - 2019</p>
-                        </li>
-
-                    </ul>
-                    <h2> Skills: </h2>
-                    <ul>
-                        <li>
-                            <p>Teamwork & Collaboration</p>
-                        </li>
-                        <li>
-                            <p>Problem-Solving</p>
-                        </li>
-                        <li>
-                            <p>Time Management</p>
-                        </li>
-                        <li>
-                            <p>Self-Improvement & Learning</p>
-                        </li>
-                        <li>
-                            <p>Communication</p>
-                        </li>
-
-                    </ul>
-
-                    <!-- From Uiverse.io by Juanes200122 -->
-                    <h2> Languages: </h2>
-                    <div class="container">
-                        <div class="skill-box">
-                            <span class="title">English</span>
-
-                            <div class="skill-bar">
-                                <span class="skill-per html">
-                                    <span class="tooltip">B2</span>
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="skill-box">
-                            <span class="title">Spanish</span>
-
-                            <div class="skill-bar">
-                                <span class="skill-per css">
-                                    <span class="tooltip">C1</span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="skill-box">
-                            <span class="title">Turkish</span>
-
-                            <div class="skill-bar">
-                                <span class="skill-per javascript">
-                                    <span class="tooltip">NATIVE</span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="skill-box">
-                            <span class="title">Persian</span>
-
-                            <div class="skill-bar">
-                                <span class="skill-per nodejs">
-                                    <span class="tooltip">NATIVE</span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section id="about" class="section">
+        <div class="container about-grid">
+            <div class="about-text animate-left">
+                <h2 class="section-title">Sobre mí</h2>
+                <p>Soy un profesional de 24 años con una pasión  por la informática y un compromiso inquebrantable con la excelencia técnica. Mi enfoque se centra en el aprendizaje constante y la resolución creativa de problemas a través del código.</p>
+                <p>Cuento con una sólida base en el desarrollo de aplicaciones web, dominando tanto los fundamentos de programación como las tecnologías modernas. </p>
             </div>
+            <div class="languages-box animate-right">
+                <h3>Idiomas</h3>
+                <div class="lang-item"><span>Español (Alto)</span> <div class="bar"><div class="fill" style="width: 95%"></div></div></div>
+                <div class="lang-item"><span>Inglés (Alto)</span> <div class="bar"><div class="fill" style="width: 90%"></div></div></div>
+                <div class="lang-item"><span>Turco (Nativo)</span> <div class="bar"><div class="fill" style="width: 100%"></div></div></div>
+                <div class="lang-item"><span>Persa (Nativo)</span> <div class="bar"><div class="fill" style="width: 100%"></div></div></div>
+            </div>
+        </div>
+    </section>
 
-            <div id="rightBarDiv">
-                <div style="display: flex;">
-                    <div id="nameDiv" class="rightDogs"></div>
-                    <div class="rightDogs">
-                        <!-- From Uiverse.io by chase2k25 -->
-                        <div class="main">
-                            <div class="up">
-                                <button id="instaid" class="card card1"
-                                    onclick="window.open ('https://www.instagram.com/_parsa_p3/', '_blank')">
-                                    <svg class="instagram" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="40px"
-                                        height="40px" fill-rule="nonzero">
-                                        <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
-                                            stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
-                                            text-anchor="none" style="mix-blend-mode: normal">
-                                            <g transform="scale(8.53333,8.53333)">
-
-                                            </g>
-                                        </g>
-                                    </svg>
-                                </button>
-                                <button id="discordid" class="card card2"
-                                    onclick="window.open ('https://discord.com/users/979457636980359168 ', '_blank')">
-                                    <svg class="Discord" height="40px" width="40px" viewBox="0 0 24 24"
-                                        xmlns="http://www.w3.org/2000/svg">
-
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="down">
-                                <button id="githubid" class="card card3"
-                                    onclick="window.open ('https://github.com/Parsa-P3', '_blank')">
-                                    <svg class="github" height="38px" width="38px" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24">
-
-                                    </svg>
-                                </button>
-                                <button id="mailhubid" class="card card4"
-                                    onclick="window.open ('mailto:parsapourshahroodi@gmail.com', '_blank')"></button>>
-                                <svg width="40" height="40" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                                    class="whatsapp">
-
-                                </svg>
-                                </button>
-                            </div>
-                        </div>
-
-
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title center animate-fade-up">Formación Académica</h2>
+            <div class="experience-focus animate-fade-up">
+                <div class="exp-header">
+                    <div class="exp-title">
+                        <h3>Desarrollo de Aplicaciones Web (DAW)</h3>
+                        <span class="company">Prometeo By ThePower (Grado Superior FP)</span>
                     </div>
+                    <span class="date">09/2024 - Actualidad</span>
                 </div>
-                <div id="bio" class="rightDogs">
-                    <h2>
-                        About me :
-                    </h2>
-                    <p>
-                        A 24-year-old professional with an innate passion for IT and a constant commitment to learning
-                        and excellence. I possess a solid technical foundation in software development, mastering the
-                        fundamentals of HTML, JavaScript (Angular), Java, MySQL, and PHP, knowledge that I actively
-                        continue to develop.
-                        Experience studying and working in three different countries, and proficiency in four languages,
-                        ensuring effective collaboration in any multicultural work environment. </p>
-                    <br>
-                    <h2>Experience : </h2>
-                    <h3>Delivery Rider at JUST EAT (SPAIN)</h3>
-                    <p>Provide evening delivery services while balancing school responsibilities.
-                        Ensure timely and efficient deliveries while maintaining high customer satisfaction.</p>
-                    <p>February 2024 - Present</p>
-
-                    <h3>Sales Specialist at LUXURY FOOD (SPAIN) </h3>
-
-                    <p>Responsible for customer satisfaction and ensuring a positive shopping experience.
-                        Managed inventory, organized stock, and placed product orders for the store.
-                        Assisted in daily sales operations and supported team members in achieving sales goals.
-                        Monitored and resolved customer issues to ensure high levels of customer satisfaction.
-                        Provide evening delivery services while balancing school responsibilities.
-                        Ensure timely and efficient deliveries while maintaining high customer satisfaction. </p>
-                    <p> May 2023 - December 2023 </p>
-
-                    <h3>Barista at MIST LOUNGE (TURKEY) </h3>
-
-                    <p>Worked as a barista, providing excellent customer service in busy cafés.Gained experience in
-                        customer interaction, food and beverage preparation.</p>
-                    <p>2019 - 2022</p>
-
-
-
-
+                <div class="exp-body">
+                    <p style="color: var(--text-dim); margin-bottom: 15px;">Formación avanzada en arquitectura de software, gestión de bases de datos y desarrollo de interfaces interactivas.</p>
                 </div>
             </div>
         </div>
+    </section>
 
+    <section id="skills" class="section bg-dark">
+        <div class="container">
+            <h2 class="section-title center animate-fade-up">Stack Tecnológico</h2>
+            <div class="skills-grid">
+                <div class="skill-card animate-fade-up"><i class='bx bxl-angular'></i><h4>Angular</h4></div>
+                <div class="skill-card animate-fade-up"><i class='bx bxl-java'></i><h4>Java</h4></div>
+                <div class="skill-card animate-fade-up"><i class='bx bxl-php'></i><h4>PHP</h4></div>
+                <div class="skill-card animate-fade-up"><i class='bx bxl-javascript'></i><h4>JavaScript</h4></div>
+                <div class="skill-card animate-fade-up"><i class='bx bxl-postgresql'></i><h4>MySQL</h4></div>
+                <div class="skill-card animate-fade-up"><i class='bx bxl-html5'></i><h4>HTML5</h4></div>
+            </div>
 
-
-    </div>
-    <!-- <footer>
-        <div id="footer">
-
-
+            <h2 class="section-title center animate-fade-up" style="margin-top: 100px;">Soft Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card animate-fade-up"><i class='bx bx-group'></i><h4>Trabajo en Equipo</h4></div>
+                <div class="skill-card animate-fade-up"><i class='bx bx-brain'></i><h4>Resolución de Problemas</h4></div>
+                <div class="skill-card animate-fade-up"><i class='bx bx-time-five'></i><h4>Gestión del Tiempo</h4></div>
+                <div class="skill-card animate-fade-up"><i class='bx bx-message-detail'></i><h4>Comunicación</h4></div>
+            </div>
         </div>
-    </footer> -->
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title center animate-fade-up">Experiencia en el Sector</h2>
+            <div class="experience-focus animate-fade-up">
+                <div class="exp-header">
+                    <div class="exp-title">
+                        <h3>Desarrollador Junior (Prácticas)</h3>
+                        <span class="company">Mercanza SL</span>
+                    </div>
+                    <span class="date">2025</span>
+                </div>
+                <div class="exp-body">
+                    <ul>
+                        <li><i class='bx bx-check-circle'></i> Desarrollo Full-Stack de aplicaciones web utilizando estándares modernos.</li>
+                        <li><i class='bx bx-check-circle'></i> Mantenimiento y actualización de librerías para optimizar el rendimiento.</li>
+                        <li><i class='bx bx-check-circle'></i> Colaboración en el ciclo de vida del software en un entorno profesional.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section bg-dark">
+        <div class="container">
+            <h2 class="section-title center animate-fade-up">Proyectos</h2>
+            <div class="empty-projects animate-fade-up">
+                <i class='bx bx-dots-horizontal-rounded'></i>
+                <p>Proyectos en desarrollo. Próximamente integrando trabajos de Java y Angular.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container animate-fade-up">
+            <div class="contact-footer">
+                <h2 class="section-title center">¿Hablamos?</h2>
+                <p class="center">Estoy disponible para nuevas oportunidades y colaboraciones.</p>
+                <div class="contact-methods">
+                    <a href="mailto:parsapourshahroodi@gmail.com" class="method-card"><i class='bx bx-envelope'></i><span>Email</span></a>
+                    <a href="www.linkedin.com/in/m-parsa-p" target="_blank" class="method-card"><i class='bx bxl-linkedin'></i><span>LinkedIn</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <p>Parsa Pour Shahroodi | 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
